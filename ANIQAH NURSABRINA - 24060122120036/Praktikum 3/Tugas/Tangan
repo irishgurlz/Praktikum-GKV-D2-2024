@@ -1,0 +1,343 @@
+#include <GL/glut.h>
+static int tangan = 0, shoulder = 0, elbow = 0,jaribawah1 = 0, jaritengah1 = 0, jariatas1 = 0, jaribawah2 = 0, jaritengah2 = 0, jariatas2 = 0, jaribawah3 = 0, jaritengah3 = 0, jariatas3 = 0, jaribawah4 = 0, jaritengah4 = 0, jariatas4 = 0, jaribawah5 = 0, jaritengah5 = 0, jariatas5 = 0;
+
+void init(void) {
+	glClearColor (0.0, 0.0, 0.0, 0.0); 
+	glShadeModel (GL_FLAT);
+}
+
+void jari1 (void){
+	glPushMatrix();
+//	glRotatef(53.0, 0.0, 1.0, 0.0);
+	glTranslatef(-0.95, -0.05, -4.0);
+		glTranslatef (0.1, -0.0625, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jaribawah1, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.4, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 0.9, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jaritengah1, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.25, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 0.9, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jariatas1, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.25, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 0.9, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+	glPopMatrix();	
+}
+
+void jari2 (void){
+	glPushMatrix();
+//	glRotatef(53.0, 0.0, 1.0, 0.0);
+	glTranslatef(-0.35, -0.02, -4.01);  
+		glTranslatef (-0.17, -0.0625, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jaribawah2, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.45, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 1.2, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jaritengah2, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.53, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 1.2, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jariatas2, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.53, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 1.2, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+	glPopMatrix();	
+}
+
+void jari3 (void){
+	glPushMatrix();
+//	glRotatef(53.0, 0.0, 1.0, 0.0);
+	glTranslatef(0.2, 0.0, -4.0); 
+		glTranslatef (-0.39, -0.0625, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jaribawah3, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.325, 0.0);  
+		glPushMatrix();
+			glScalef (0.25, 0.9, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jaritengah3, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.25, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 0.9, 0.5);  
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jariatas3, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.25, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 0.9, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+	glPopMatrix();	
+}
+
+
+void jari4 (void){
+	glPushMatrix();
+//	glRotatef(53.0, 0.0, 1.0, 0.0); 
+	glTranslatef(0.8, -0.05, -4.0); 
+		glTranslatef (-0.65, -0.0625, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jaribawah4, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.33, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 0.8, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jaritengah4, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.15, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 0.8, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) jariatas4, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.15, 0.0); 
+		glPushMatrix();
+			glScalef (0.25, 0.8, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+	glPopMatrix();	
+}
+
+
+
+void jari5(void) {
+	glPushMatrix();
+//	glRotatef(53.0, 0.0, 1.0, 0.0); 
+	glRotatef(90.0, 0.0, 0.0, 1.0);
+	glTranslatef(0.8, 1.2, -4.0); 
+		glTranslatef (-1.9, 0.0625, 0.0);
+		glTranslatef (-0.3, -0.15, 0.0);
+		glRotatef ((GLfloat) jaritengah5, 1.0, 0.0, 0.0);
+		glTranslatef (0.3, 0.15, 0.0); 
+		glPushMatrix();
+			glScalef (0.6, 0.45, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.35, 0.0); 
+		glTranslatef (0.3, -0.15, 0.0);
+		glRotatef ((GLfloat) jaribawah5, 1.0, 0.0, 0.0);
+		glTranslatef (-0.3, 0.15, 0.0); 
+		glPushMatrix();
+			glScalef (0.6, 0.45, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+	glPopMatrix();	
+}
+
+void telapak (void){
+	glPushMatrix();
+//	glRotatef(53.0, 0.0, 1.0, 0.0); 
+	glTranslatef(0.0, -1.1, -4.0); 
+		glTranslatef (0.0, -0.0625, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glRotatef ((GLfloat) tangan, 1.0, 0.0, 0.0);
+		glTranslatef (0.0, 0.07, 0.0); 
+		glPushMatrix();
+			glTranslatef (-0.46, -0.8, 0.0);
+			glScalef (3.5, 2.5, 0.5); 
+			glutWireCube (1.0); 
+		glPopMatrix();
+		glTranslatef (0.0, 0.8, 0.0);
+		glTranslatef (0.0, -0.15, 0.0);
+		glTranslatef (0.0, -1.86, 0.0); 
+		glPushMatrix();
+			glTranslatef (-0.5, -1.5, 0.0);
+			glScalef (2.8, 1.0, 0.5);
+			glutWireCube (1.0); 
+			glTranslatef (0.35, 3.5, 3.3);
+			jari1();
+		   	jari2();
+		   	jari3();
+		   	jari5();		
+		   	jari4();
+		glPopMatrix();
+	glPopMatrix();	
+}
+void display(void) {
+	glClear (GL_COLOR_BUFFER_BIT);
+	
+	telapak();
+	
+	glutSwapBuffers();
+}
+
+void reshape (int w, int h) {
+	glViewport (0, 0, (GLsizei) w, (GLsizei) h); 
+	glMatrixMode (GL_PROJECTION); 
+	glLoadIdentity ();
+	gluPerspective(65.0, (GLfloat) w/(GLfloat) h, 1.0, 20.0); 
+	glMatrixMode(GL_MODELVIEW); 
+	glLoadIdentity();
+	glTranslatef (0.0, 0.0, -5.0);
+}
+
+void keyboard(unsigned char key, int x, int y) { 
+    switch (key) {
+        // Kontrol jari1
+        case 'a': jaribawah1  = (jaribawah1 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'A': jaribawah1 = (jaribawah1 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'b': jaritengah1 = (jaritengah1 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'B': jaritengah1 = (jaritengah1 - 5) % 150; 
+            glutPostRedisplay(); 
+            break; 
+        case 'c': jariatas1 = (jariatas1 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'C': jariatas1 = (jariatas1 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+
+        // Kontrol jari2
+        case 'd': jaribawah2  = (jaribawah2 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'D': jaribawah2 = (jaribawah2 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'e': jaritengah2 = (jaritengah2 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'E': jaritengah2 = (jaritengah2 - 5) % 150; 
+            glutPostRedisplay(); 
+            break; 
+        case 'f': jariatas2 = (jariatas2 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'F': jariatas2 = (jariatas2 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+
+        // Kontrol jari3
+        case 'g': jaribawah3  = (jaribawah3 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'G': jaribawah3 = (jaribawah3 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'h': jaritengah3 = (jaritengah3 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'H': jaritengah3 = (jaritengah3 - 5) % 150; 
+            glutPostRedisplay(); 
+            break; 
+        case 'i': jariatas3 = (jariatas3 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'I': jariatas3 = (jariatas3 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+
+        // Kontrol jari4
+        case 'j': jaribawah4  = (jaribawah4 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'J': jaribawah4 = (jaribawah4 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'k': jaritengah4 = (jaritengah4 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'K': jaritengah4 = (jaritengah4 - 5) % 150; 
+            glutPostRedisplay(); 
+            break; 
+        case 'l': jariatas4 = (jariatas4 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'L': jariatas4 = (jariatas4 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+
+        // Kontrol jari5
+        case 'm': jaribawah5  = (jaribawah5 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'M': jaribawah5 = (jaribawah5 - 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'n': jaritengah5 = (jaritengah5 + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'N': jaritengah5 = (jaritengah5 - 5) % 150; 
+            glutPostRedisplay(); 
+            break; 
+            
+      	case 'o': shoulder  = (shoulder + 5) % 15; 
+            glutPostRedisplay(); 
+            break;
+        case 'O': shoulder = (shoulder - 5) % 15; 
+            glutPostRedisplay(); 
+            break;
+        case 'p': elbow = (elbow + 5) % 30; 
+            glutPostRedisplay(); 
+            break;
+        case 'P': elbow = (elbow - 5) % 30; 
+            glutPostRedisplay(); 
+            break; 
+        case 'q': tangan = (tangan + 5) % 150; 
+            glutPostRedisplay(); 
+            break;
+        case 'Q': tangan = (tangan - 5) % 150; 
+            glutPostRedisplay(); 
+            break; 
+        case 27: 
+            exit(0); 
+            break; 
+        default: 
+            break;
+    }
+}
+
+
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+    glutInitWindowSize(700, 600);
+    glutInitWindowPosition(100, 100);
+    glutCreateWindow(argv[0]);
+    init();
+    glutDisplayFunc(display);
+    glutReshapeFunc(reshape);
+    glutKeyboardFunc(keyboard);
+    glutMainLoop();
+    return 0;
+}
